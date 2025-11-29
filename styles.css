@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+header {
+    background: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.content {
+    padding: 20px;
+}
+
+.plane-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+header {
+    background: #003366;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.content {
+    padding: 20px;
+}
+
+.plane-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
