@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avidot Aviation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Avidot Aviation</h1>
+        <p>Your home for aircraft information and aviation facts.</p>
+    </header>
+
+    <section class="content">
+        <h2>Explore Aircraft</h2>
+        <div id="aircraft-list"></div>
+    </section>
+
+    <footer>
+        <p>© 2025 Avidot Aviation</p>
+    </footer>
+
+    <script>
+        fetch("aircraft.json")
+            .then(res => res.json())
+            .then(data => {
+                const container = document.getElementById("aircraft-list");
+                data.forEach(plane => {
+                    const card = document.createElement("div");
+                    card.className = "plane-card";
+                    card.innerHTML = `
+                        <h3>${plane.name}</h3>
+                        <p><strong>Type:</strong> ${plane.type}</p>
+                        <p><strong>Top Speed:</strong> ${plane.speed}</p>
+                        <p><strong>Description:</strong> ${plane.description}</p>
+                    `;
+                    container.appendChild(card);
+                });
+            });
+    </script>
+</body>
+</html>
